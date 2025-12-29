@@ -2,16 +2,16 @@ import { useEffect } from "react"
 import Lenis from "@studio-freight/lenis"
 
 // Tus componentes
-import GlowBackground from "./components/GlowBackground"
-import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
-import TechMarquee from "./components/TechMarquee"
-import AtlasMethod from "./components/AtlasMethod"
-import ServicesBento from "./components/ServicesBento"
-import Testimonials from "./components/Testimonials"
-import Contact from "./components/Contact"
-import Footer from "./components/Footer"
-import ParallaxSection from "./components/ParallaxSection"
+import GlowBackground from "./components/GlowBackground.jsx"
+import NavBar from "./components/NavBar.jsx"
+import Hero from "./components/Hero.jsx"
+import TechMarquee from "./components/TechMarquee.jsx"
+import AtlasMethod from "./components/AtlasMethod.jsx"
+import ServicesBento from "./components/ServicesBento.jsx"
+import Testimonials from "./components/Testimonials.jsx"
+import Contact from "./components/Contact.jsx"
+import Footer from "./components/Footer.jsx"
+import ParallaxSection from "./components/ParallaxSection.jsx"
 
 export default function App() {
   useEffect(() => {
@@ -45,7 +45,7 @@ export default function App() {
       {/* Depth & light */}
       <GlowBackground />
       {/* Navbar */}
-      <Navbar />
+      <NavBar />
 
       {/* Content */}
       <main className="pt-24">
