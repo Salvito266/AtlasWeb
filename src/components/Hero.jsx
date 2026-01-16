@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { ArrowRight, PlayCircle, Mouse } from "lucide-react"
+import { ArrowRight, Mouse } from "lucide-react"
 
 export default function Hero() {
   return (
@@ -52,8 +52,8 @@ export default function Hero() {
           Creamos experiencias digitales memorables con precisión técnica y diseño vivo.
         </motion.p>
 
-        {/* Botones CTA */}
-        <div className="mt-4 flex flex-col sm:flex-row gap-4 justify-center">
+        {/* CTA centrado */}
+        <div className="mt-4 flex justify-center">
           <motion.a
             href="#contact"
             className="inline-flex items-center gap-2 rounded-xl bg-atlas-primary px-6 py-3 text-sm font-semibold shadow-lg hover:bg-atlas-primary/90 hover:shadow-[0_0_15px_rgba(0,150,255,0.6)] text-white transition"
@@ -62,15 +62,6 @@ export default function Hero() {
           >
             <ArrowRight className="h-4 w-4" />
             Comenzar proyecto
-          </motion.a>
-          <motion.a
-            href="#stack"
-            className="inline-flex items-center gap-2 rounded-xl border border-white/30 px-6 py-3 text-sm font-semibold hover:bg-white/10 text-white transition"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <PlayCircle className="h-4 w-4" />
-            Ver Stack Tecnológico
           </motion.a>
         </div>
       </div>

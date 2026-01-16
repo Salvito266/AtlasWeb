@@ -38,7 +38,7 @@ export default function Footer() {
             </motion.span>
           </motion.div>
 
-          {/* Navegación */}
+          {/* Navegación + Teléfono */}
           <motion.div
             variants={{
               hidden: { opacity: 0, y: 20 },
@@ -65,6 +65,17 @@ export default function Footer() {
             >
               Contacto
             </a>
+
+            {/* Teléfono */}
+            <motion.a
+              href="tel:+56993967609"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.97 }}
+              className="inline-flex items-center gap-2 rounded-lg px-3 py-1.5 text-white/80 hover:text-white bg-white/5 hover:bg-white/10 transition-colors shadow-[0_0_0_rgba(0,0,0,0)] hover:shadow-[0_0_12px_rgba(94,139,255,0.35)]"
+            >
+              <span className="text-[11px] uppercase tracking-wide text-white/50">Tel</span>
+              <span className="text-sm font-semibold">+56 9 9396 7609</span>
+            </motion.a>
           </motion.div>
         </motion.div>
       </div>
