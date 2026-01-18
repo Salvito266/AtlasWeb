@@ -9,6 +9,7 @@ import ServicesBento from "./components/ServicesBento.jsx"
 import Contact from "./components/Contact.jsx"
 import Footer from "./components/Footer.jsx"
 import ParallaxSection from "./components/ParallaxSection.jsx"
+import WhyAtlas from "./components/WhyAtlas.jsx"
 
 export default function App() {
   useEffect(() => {
@@ -47,6 +48,7 @@ export default function App() {
       <main className="">
         <Hero />
         <ParallaxSection />
+        <WhyAtlas />
         <AtlasMethod />
         <ServicesBento />
         <Contact />
