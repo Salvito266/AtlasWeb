@@ -1,4 +1,3 @@
-// components/WhyAtlas.jsx
 import { motion } from "framer-motion"
 
 export default function WhyAtlas() {
@@ -10,7 +9,7 @@ export default function WhyAtlas() {
       transition={{ duration: 1.2, ease: "easeOut" }}
       viewport={{ once: true, amount: 0.3 }}
     >
-      {/* Título grande */}
+      {/* Título grande con Atlas destacado */}
       <motion.h2
         className="text-4xl sm:text-5xl font-extrabold mb-4 text-white"
         initial={{ opacity: 0, y: -20 }}
@@ -18,7 +17,29 @@ export default function WhyAtlas() {
         transition={{ duration: 1, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        ¿Por qué elegir Atlas?
+        ¿Por qué elegir{" "}
+        <span className="relative inline-block">
+          <motion.span
+            className="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-cyan-300 to-violet-400"
+            animate={{
+              backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+            }}
+            transition={{ repeat: Infinity, duration: 6, ease: "linear" }}
+            style={{
+              backgroundSize: "200% 200%",
+              display: "inline-block",
+            }}
+          >
+            Atlas
+          </motion.span>
+          {/* Glow detrás */}
+          <motion.span
+            className="absolute inset-0 blur-xl bg-gradient-to-r from-sky-400 via-cyan-400 to-violet-400 rounded-lg"
+            animate={{ opacity: [0.2, 0.9, 0.2], scale: [0.95, 1.15, 0.95] }}
+            transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
+          />
+        </span>
+        ?
       </motion.h2>
 
       {/* Subtítulo debajo */}
