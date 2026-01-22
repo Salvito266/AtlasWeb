@@ -30,7 +30,7 @@ export default function WhyAtlas() {
               display: "inline-block",
             }}
           >
-            Atlas
+            Atlas Devs
           </motion.span>
           {/* Glow detrás */}
           <motion.span
